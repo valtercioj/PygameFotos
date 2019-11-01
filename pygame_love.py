@@ -22,7 +22,7 @@ display_w = 800
 display_h = 700
 
 gameDisplay = pygame.display.set_mode((display_w,display_h))
-pygame.display.set_caption('Gbat & Jane')
+pygame.display.set_caption('Valtercio & Hellen')
 
 black = (0,0,0)
 white = (255,255,255)
