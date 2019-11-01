@@ -8,7 +8,7 @@ def draw(img, x,y):
 pygame.init()
 
 display_w = 800
-display_h = 600
+display_h = 700
 
 gameDisplay = pygame.display.set_mode((display_w,display_h))
 pygame.display.set_caption('Gbat & Jane')
@@ -34,8 +34,10 @@ hellenDirX = 1
 hellenDirY = 1
 hellenImg = pygame.image.load('hellen.jpg')
 hellenImg = pygame.transform.scale(hellenImg, (W, H))
-
+w = 760
+h = 730
 osDoisImg = pygame.image.load('OsDois.jpg')
+osDoisImg = pygame.transform.scale(osDoisImg, (w, h))
 vel = 10
 
 while not love:
@@ -75,5 +77,6 @@ while not love:
 
 draw(osDoisImg, 0, 0)
 pygame.display.update()
-time.sleep(10)
+time.sleep(5)
 pygame.quit()
+
