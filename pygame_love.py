@@ -1,7 +1,18 @@
 import sys
-import pygame
 import time
+import os
+plat = sys.platform
 
+if plat == 'win32':
+    try:
+        import pygame
+    except:
+        os.system('pip install pygame')
+elif plat == 'linux':
+    try:
+        import pygame
+    except:
+        os.system('pip3 install pygame')
 def draw(img, x,y):
     gameDisplay.blit(img, (x,y))
 
