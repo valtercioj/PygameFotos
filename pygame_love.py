@@ -18,8 +18,8 @@ def draw(img, x,y):
 
 pygame.init()
 
-display_w = 800
-display_h = 700
+display_w = 900
+display_h = 800
 
 gameDisplay = pygame.display.set_mode((display_w,display_h))
 pygame.display.set_caption('Valtercio & Hellen')
